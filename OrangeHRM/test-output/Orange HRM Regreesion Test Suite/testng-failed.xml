@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Orange HRM Regreesion Test Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="com.qa.orangeHRM.TestReports.Reports"/>
+  </listeners>
+  <test thread-count="2" name="Orange HRM-Regression Test(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.orageHRM.TestCases.HomePageTest">
+        <methods>
+          <include name="verifyMovetoJobTitlePage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.orageHRM.TestCases.HomePageTest -->
+      <class name="com.qa.orageHRM.TestCases.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyLoginTest"/>
+        </methods>
+      </class> <!-- com.qa.orageHRM.TestCases.LoginTest -->
+    </classes>
+  </test> <!-- Orange HRM-Regression Test(failed) -->
+</suite> <!-- Failed suite [Orange HRM Regreesion Test Suite] -->

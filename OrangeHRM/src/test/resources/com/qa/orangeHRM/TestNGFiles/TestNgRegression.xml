@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Orange HRM Regreesion Test Suite" parallel="methods" thread-count="2">
+<listeners>
+<listener class-name="com.qa.orangeHRM.TestReports.Reports"></listener>
+</listeners>
+
+<test name="Orange HRM-Regression Test">
+<parameter name="browser" value="chrome"></parameter>
+		
+ <classes>
+    		<class name="com.qa.orageHRM.TestCases.LoginTest"/>
+      		<class name="com.qa.orageHRM.TestCases.HomePageTest"/> 
+      		
+    	</classes>
+  	</test> <!-- Test -->
+</suite> <!-- Suite -->
